@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    background: #bffcc6;
+    font-family: Arial;
+    overflow: hidden;
+}
+
+#gameArea {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#frog {
+    position: absolute;
+    cursor: pointer;
+    transition: 0.25s cubic-bezier(.3,-0.3,.6,1.4);
+}
+
+#frog img {
+    width: 120px;
+    height: auto;
+    pointer-events: none; /* importante */
+}
+
+#message {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
